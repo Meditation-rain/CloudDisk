@@ -1,0 +1,79 @@
+[
+  {
+    "fileId": "folder_docs",
+    "name": "学习资料",
+    "size": 0,
+    "path": "/学习资料",
+    "type": "folder",
+    "parentId": null,
+    "timestamp": "2026-05-23T08:00:00Z",
+    "lastOpenedAt": null,
+    "savedAt": "2026-05-23T08:00:00Z"
+  },
+  {
+    "fileId": "folder_media",
+    "name": "视频收藏",
+    "size": 0,
+    "path": "/视频收藏",
+    "type": "folder",
+    "parentId": null,
+    "timestamp": "2026-05-23T08:10:00Z",
+    "lastOpenedAt": null,
+    "savedAt": "2026-05-23T08:10:00Z"
+  },
+  {
+    "fileId": "txt_readme",
+    "name": "项目说明.txt",
+    "size": 4096,
+    "path": "/项目说明.txt",
+    "type": "txt",
+    "parentId": null,
+    "timestamp": "2026-05-23T08:20:00Z",
+    "lastOpenedAt": "2026-05-23T09:00:00Z",
+    "savedAt": "2026-05-23T08:20:00Z"
+  },
+  {
+    "fileId": "txt_swift",
+    "name": "SwiftUI 笔记.txt",
+    "size": 8192,
+    "path": "/学习资料/SwiftUI 笔记.txt",
+    "type": "txt",
+    "parentId": "folder_docs",
+    "timestamp": "2026-05-23T08:30:00Z",
+    "lastOpenedAt": "2026-05-23T09:30:00Z",
+    "savedAt": "2026-05-23T08:30:00Z"
+  },
+  {
+    "fileId": "txt_database",
+    "name": "SQLite 设计.txt",
+    "size": 6144,
+    "path": "/学习资料/SQLite 设计.txt",
+    "type": "txt",
+    "parentId": "folder_docs",
+    "timestamp": "2026-05-23T08:40:00Z",
+    "lastOpenedAt": null,
+    "savedAt": "2026-05-23T08:40:00Z"
+  },
+  {
+    "fileId": "folder_archive",
+    "name": "归档",
+    "size": 0,
+    "path": "/学习资料/归档",
+    "type": "folder",
+    "parentId": "folder_docs",
+    "timestamp": "2026-05-23T08:50:00Z",
+    "lastOpenedAt": null,
+    "savedAt": "2026-05-23T08:50:00Z"
+  },
+  {
+    "fileId": "video_demo",
+    "name": "产品演示.mp4",
+    "size": 52428800,
+    "path": "/视频收藏/产品演示.mp4",
+    "type": "video",
+    "parentId": "folder_media",
+    "timestamp": "2026-05-23T09:10:00Z",
+    "lastOpenedAt": "2026-05-23T10:00:00Z",
+    "savedAt": "2026-05-23T09:10:00Z"
+  }
+]

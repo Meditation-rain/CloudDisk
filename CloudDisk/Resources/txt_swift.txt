@@ -1,0 +1,21 @@
+SwiftUI 笔记
+
+SwiftUI 的核心思想是使用声明式语法描述界面。界面由状态驱动，状态变化后系统会自动重新计算 View 的 body，并把差异更新到屏幕上。
+
+本项目中，ContentView 负责底部 Tab 框架。HomeView 展示网盘首页和最近记录。FileBrowserView 展示文件列表，并通过 NavigationStack 管理文件夹进入、文本阅读器和视频播放器。
+
+ViewModel 使用 ObservableObject 暴露页面状态，例如 files、isLoading、errorMessage。页面只负责展示状态和转发用户操作，真正的数据读取由 Repository 和 Service 完成。
+
+这种拆分方式适合两周内完成项目：结构清楚，但不会引入过重的架构成本。
+
+左滑进入下一页，右滑回到上一页。你可以用这份笔记验证阅读器的分页和手势行为。
+
+SwiftUI 的页面拆分要尽量贴近业务。文件行组件只负责展示文件名、类型、大小和图标；文件列表页面负责处理点击；ViewModel 负责决定点击后进入文件夹、阅读器还是播放器。这样每个文件的职责都比较清楚。
+
+NavigationStack 适合处理页面跳转。当前文件夹进入使用 ViewModel 的 folderStack 管理，txt 阅读器和视频播放器使用 NavigationPath 跳转。这样既能保留文件夹导航，也能进入独立详情页。
+
+异步加载使用 task 和 async 方法。页面出现时触发 load，Repository 准备初始数据，然后查询数据库。因为数据库读写不在主线程执行，列表滚动和按钮点击不会被数据库 IO 卡住。
+
+Preview 主要用于看布局，不适合完整验证数据库、文件系统和播放器。真正验收功能时，应该使用 Cmd + R 在模拟器里运行。Canvas 可以用来快速观察页面结构，模拟器用来验证交互闭环。
+
+写 SwiftUI 时，不要把所有代码都堆在 ContentView。这个项目已经把模型、服务、仓库、ViewModel 和页面分开，后续继续实现上传、删除、移动、重命名时，也可以沿着这个结构扩展。

@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A0000010000000000000001 /* CloudDiskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000001001 /* CloudDiskApp.swift */; };
+		1A0000010000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000001002 /* ContentView.swift */; };
+		1A0000010000000000000003 /* FileItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000001003 /* FileItem.swift */; };
+		1A0000010000000000000004 /* ShareRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000001004 /* ShareRecord.swift */; };
+		1A0000010000000000000005 /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000001005 /* MockNetworkService.swift */; };
+		1A0000010000000000000006 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000001006 /* DatabaseService.swift */; };
+		1A0000010000000000000007 /* FileRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000001007 /* FileRepository.swift */; };
+		1A0000010000000000000008 /* FileBrowserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000001008 /* FileBrowserViewModel.swift */; };
+		1A0000010000000000000009 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000001009 /* HomeViewModel.swift */; };
+		1A0000010000000000000010 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000001010 /* HomeView.swift */; };
+		1A0000010000000000000011 /* FileBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000001011 /* FileBrowserView.swift */; };
+		1A0000010000000000000012 /* FileRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000001012 /* FileRowView.swift */; };
+		1A0000010000000000000013 /* mock_files.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000001013 /* mock_files.json */; };
+		1A0000010000000000000014 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000001015 /* libsqlite3.tbd */; };
+		1A0000010000000000000015 /* TextContentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000001016 /* TextContentService.swift */; };
+		1A0000010000000000000016 /* TextReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000001017 /* TextReaderView.swift */; };
+		1A0000010000000000000017 /* SystemVideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000001018 /* SystemVideoPlayerView.swift */; };
+		1A0000010000000000000018 /* txt_readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000001019 /* txt_readme.txt */; };
+		1A0000010000000000000019 /* txt_swift.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000001020 /* txt_swift.txt */; };
+		1A0000010000000000000020 /* txt_database.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000001021 /* txt_database.txt */; };
+		1A0000010000000000000021 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000001022 /* AppRouter.swift */; };
+		1A0000010000000000000022 /* ShareLandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000001023 /* ShareLandingView.swift */; };
+		1A0000010000000000000023 /* DatabaseStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000001024 /* DatabaseStats.swift */; };
+		8DA0E2E02FC96C9900B29555 /* video_demo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8DA0E2DF2FC96C9900B29555 /* video_demo.mp4 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A0000010000000000001000 /* CloudDisk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudDisk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A0000010000000000001001 /* CloudDiskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudDiskApp.swift; sourceTree = "<group>"; };
+		1A0000010000000000001002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1A0000010000000000001003 /* FileItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileItem.swift; sourceTree = "<group>"; };
+		1A0000010000000000001004 /* ShareRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareRecord.swift; sourceTree = "<group>"; };
+		1A0000010000000000001005 /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
+		1A0000010000000000001006 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		1A0000010000000000001007 /* FileRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileRepository.swift; sourceTree = "<group>"; };
+		1A0000010000000000001008 /* FileBrowserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileBrowserViewModel.swift; sourceTree = "<group>"; };
+		1A0000010000000000001009 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		1A0000010000000000001010 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1A0000010000000000001011 /* FileBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileBrowserView.swift; sourceTree = "<group>"; };
+		1A0000010000000000001012 /* FileRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileRowView.swift; sourceTree = "<group>"; };
+		1A0000010000000000001013 /* mock_files.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mock_files.json; sourceTree = "<group>"; };
+		1A0000010000000000001014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A0000010000000000001015 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		1A0000010000000000001016 /* TextContentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextContentService.swift; sourceTree = "<group>"; };
+		1A0000010000000000001017 /* TextReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextReaderView.swift; sourceTree = "<group>"; };
+		1A0000010000000000001018 /* SystemVideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemVideoPlayerView.swift; sourceTree = "<group>"; };
+		1A0000010000000000001019 /* txt_readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = txt_readme.txt; sourceTree = "<group>"; };
+		1A0000010000000000001020 /* txt_swift.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = txt_swift.txt; sourceTree = "<group>"; };
+		1A0000010000000000001021 /* txt_database.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = txt_database.txt; sourceTree = "<group>"; };
+		1A0000010000000000001022 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		1A0000010000000000001023 /* ShareLandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareLandingView.swift; sourceTree = "<group>"; };
+		1A0000010000000000001024 /* DatabaseStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseStats.swift; sourceTree = "<group>"; };
+		8DA0E2DF2FC96C9900B29555 /* video_demo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_demo.mp4; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A0000010000000000002001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0000010000000000000014 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A0000010000000000003000 = {
+			isa = PBXGroup;
+			children = (
+				1A0000010000000000003001 /* CloudDisk */,
+				1A0000010000000000003002 /* Frameworks */,
+				1A0000010000000000003003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A0000010000000000003001 /* CloudDisk */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000010000000000001001 /* CloudDiskApp.swift */,
+				1A0000010000000000001002 /* ContentView.swift */,
+				1A0000010000000000001022 /* AppRouter.swift */,
+				1A0000010000000000003004 /* Models */,
+				1A0000010000000000003005 /* Views */,
+				1A0000010000000000003006 /* ViewModels */,
+				1A0000010000000000003007 /* Repositories */,
+				1A0000010000000000003008 /* Services */,
+				1A0000010000000000003009 /* Resources */,
+				1A0000010000000000001014 /* Info.plist */,
+			);
+			path = CloudDisk;
+			sourceTree = "<group>";
+		};
+		1A0000010000000000003002 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000010000000000001015 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A0000010000000000003003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000010000000000001000 /* CloudDisk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A0000010000000000003004 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000010000000000001003 /* FileItem.swift */,
+				1A0000010000000000001004 /* ShareRecord.swift */,
+				1A0000010000000000001024 /* DatabaseStats.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1A0000010000000000003005 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000010000000000001010 /* HomeView.swift */,
+				1A0000010000000000001011 /* FileBrowserView.swift */,
+				1A0000010000000000001012 /* FileRowView.swift */,
+				1A0000010000000000001017 /* TextReaderView.swift */,
+				1A0000010000000000001018 /* SystemVideoPlayerView.swift */,
+				1A0000010000000000001023 /* ShareLandingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1A0000010000000000003006 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000010000000000001008 /* FileBrowserViewModel.swift */,
+				1A0000010000000000001009 /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1A0000010000000000003007 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000010000000000001007 /* FileRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		1A0000010000000000003008 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000010000000000001005 /* MockNetworkService.swift */,
+				1A0000010000000000001006 /* DatabaseService.swift */,
+				1A0000010000000000001016 /* TextContentService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1A0000010000000000003009 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000010000000000001013 /* mock_files.json */,
+				1A0000010000000000001019 /* txt_readme.txt */,
+				1A0000010000000000001020 /* txt_swift.txt */,
+				1A0000010000000000001021 /* txt_database.txt */,
+				8DA0E2DF2FC96C9900B29555 /* video_demo.mp4 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A0000010000000000004000 /* CloudDisk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A0000010000000000005000 /* Build configuration list for PBXNativeTarget "CloudDisk" */;
+			buildPhases = (
+				1A0000010000000000002002 /* Sources */,
+				1A0000010000000000002001 /* Frameworks */,
+				1A0000010000000000002003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CloudDisk;
+			productName = CloudDisk;
+			productReference = 1A0000010000000000001000 /* CloudDisk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A0000010000000000006000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					1A0000010000000000004000 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 1A0000010000000000005001 /* Build configuration list for PBXProject "CloudDisk" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = "zh-Hans";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				"zh-Hans",
+				en,
+				Base,
+			);
+			mainGroup = 1A0000010000000000003000;
+			productRefGroup = 1A0000010000000000003003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A0000010000000000004000 /* CloudDisk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A0000010000000000002003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0000010000000000000013 /* mock_files.json in Resources */,
+				1A0000010000000000000018 /* txt_readme.txt in Resources */,
+				1A0000010000000000000019 /* txt_swift.txt in Resources */,
+				8DA0E2E02FC96C9900B29555 /* video_demo.mp4 in Resources */,
+				1A0000010000000000000020 /* txt_database.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A0000010000000000002002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0000010000000000000001 /* CloudDiskApp.swift in Sources */,
+				1A0000010000000000000002 /* ContentView.swift in Sources */,
+				1A0000010000000000000003 /* FileItem.swift in Sources */,
+				1A0000010000000000000004 /* ShareRecord.swift in Sources */,
+				1A0000010000000000000005 /* MockNetworkService.swift in Sources */,
+				1A0000010000000000000006 /* DatabaseService.swift in Sources */,
+				1A0000010000000000000007 /* FileRepository.swift in Sources */,
+				1A0000010000000000000008 /* FileBrowserViewModel.swift in Sources */,
+				1A0000010000000000000009 /* HomeViewModel.swift in Sources */,
+				1A0000010000000000000010 /* HomeView.swift in Sources */,
+				1A0000010000000000000011 /* FileBrowserView.swift in Sources */,
+				1A0000010000000000000012 /* FileRowView.swift in Sources */,
+				1A0000010000000000000015 /* TextContentService.swift in Sources */,
+				1A0000010000000000000016 /* TextReaderView.swift in Sources */,
+				1A0000010000000000000017 /* SystemVideoPlayerView.swift in Sources */,
+				1A0000010000000000000021 /* AppRouter.swift in Sources */,
+				1A0000010000000000000022 /* ShareLandingView.swift in Sources */,
+				1A0000010000000000000023 /* DatabaseStats.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1A0000010000000000007000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A0000010000000000007001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A0000010000000000007002 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = CloudDisk/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CloudDisk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A0000010000000000007003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = CloudDisk/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CloudDisk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A0000010000000000005000 /* Build configuration list for PBXNativeTarget "CloudDisk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0000010000000000007002 /* Debug */,
+				1A0000010000000000007003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A0000010000000000005001 /* Build configuration list for PBXProject "CloudDisk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0000010000000000007000 /* Debug */,
+				1A0000010000000000007001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A0000010000000000006000 /* Project object */;
+}

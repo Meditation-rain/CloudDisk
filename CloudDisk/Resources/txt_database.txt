@@ -1,0 +1,21 @@
+SQLite 设计
+
+本项目使用 files 表保存网盘文件信息。核心字段包括 file_id、name、size、path、type、parent_id、timestamp、last_opened_at 和 saved_at。
+
+parent_id 用来表达文件夹层级。根目录文件的 parent_id 为空，子目录文件的 parent_id 指向父文件夹的 file_id。
+
+最近浏览依赖 last_opened_at 字段。每次打开 txt 或视频文件时，应用会更新这个字段。首页读取最近浏览时，按 last_opened_at 倒序排列。
+
+最近转存依赖 saved_at 字段。当前 mock 数据会初始化 saved_at，后续上传功能完成后，新上传的文件会把 saved_at 设置为当前时间。
+
+数据库 IO 放在串行后台队列中执行，避免阻塞 SwiftUI 主线程。页面通过 async 方法调用 Repository，拿到结果后再回到主线程更新状态。
+
+files 表是当前项目最重要的表。文件夹、视频、txt 和其他文件都存在同一张表中，通过 type 字段区分类型。这样列表查询时不需要合并多张表，页面也能统一展示。
+
+share_records 表目前已经预留，用于后续 DeepLink 分享。分享链接不会直接暴露文件名和路径，而是只带 share_id。App 被链接拉起后，再根据 share_id 查询本地数据库，找到对应文件或文件夹。
+
+最近浏览的更新逻辑很简单：用户点击 txt 或视频后，调用 markOpened，数据库把 last_opened_at 更新为当前时间。首页读取 recentOpened 时，按这个字段倒序排列。
+
+最近转存现在来自 mock 数据里的 saved_at。后续做上传时，设备文件复制到沙盒目录后，会插入一条新的 files 记录，并把 saved_at 设置为当前时间。首页就能自动展示新上传文件。
+
+移动文件的本质是更新 parent_id。重命名的本质是更新 name。删除文件则需要同时考虑数据库记录和沙盒真实文件。后续阶段会在当前数据库服务上继续补充这些更新接口。
